@@ -7,7 +7,7 @@ main.addEventListener('click', function(event){
   alert('I was clicked');
 });
 
-const input = document.querySelector('input')
+const input = document.querySelector('input');
 
 input.addEventListener('keydown', function() {
   if (e.key === "g"){
