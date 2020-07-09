@@ -9,7 +9,7 @@ main.addEventListener('click', function(event){
 
 const input = document.querySelector('input')
 
-input.addEventListener('keydown', function(e) {
+input.addEventListener('keydown', function() {
   if (e.key === "g"){
     return e.preventDefault()
   } else {
