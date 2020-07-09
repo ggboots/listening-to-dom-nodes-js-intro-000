@@ -26,7 +26,7 @@ for (let i = 0; i < divs.length; i++){
   divs[i].addEventListener('click', bubble);
 }
 
-divs = document.querySelectorAll('div');
+const divs = document.querySelectorAll('div');
 
 function capture(e) {
   console.log(this.firstChild.nodeValue.trim()+ ' captured');
@@ -35,8 +35,6 @@ function capture(e) {
 for (let i = 0; i < divs.length; i++) {
   divs[i].addEventListener('click', capture, true);
 }
-
-const divs = document.querySelectorAll('div');
 
 function bubble(e){
   e.stopPropagation();
